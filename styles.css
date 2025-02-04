@@ -1,28 +1,19 @@
-
-/* General Styling */
-body {
-    font-family: Arial, sans-serif;
-}
-
-h1 {
-    text-align: center;
-}
-
-table {
-    width: 100%;
+/* General styling for all tables */
+table.middle {
+    width: 80%;
+    margin: 20px auto;
     border-collapse: collapse;
-    margin-bottom: 20px;
-}
-
-table, th, td {
     border: 1px solid black;
+    spacing: 1px;
+}
+
+/* Add padding to table cells */
+td {
     padding: 1px;
+    border: 1px solid black;
 }
 
-.middle {
-    margin: 0 auto;
-}
-
+/* Specific styles for the center and right classes */
 .center {
     text-align: center;
 }
@@ -31,10 +22,22 @@ table, th, td {
     text-align: right;
 }
 
+/* Background colors for the first and last rows of table 3 */
 .green {
     background-color: green;
+    color: white;
 }
 
 .blue {
     background-color: blue;
+    color: white;
 }
+
+/* Image cell style */
+#t-image img {
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
